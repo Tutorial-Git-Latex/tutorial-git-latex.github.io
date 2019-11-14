@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    height: 100%;
+}
+
+div#particles-js {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    animation: filter 30s infinite;
+    background: linear-gradient(180deg, rgba(0,255,163,1) 0%, rgba(50,229,67,1) 100%);
+}
+
+.pagebox {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.topnav {
+    flex-grow: 0;
+    width: 100%;
+    background-color: #333333DD;
+    display: flex;
+    justify-content: center;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #00000077;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    animation: filter 30s infinite;
+    background-color: rgba(0,255,163,1);
+    color: white;
+}
+
+.content {
+    flex-grow: 0;
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 15px;
+    background: #444444EE;
+    border: 5px #444444EE;
+    border-radius: 3px;
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+footer {
+    flex-grow: 0;
+    background: #000000DD;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer a {
+    padding:5px;
+    flex-grow: 0;
+}
+
+.space {
+    flex-grow: 1;
+}
+
+@media (max-width: 680px) {
+    .content{
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+}
+  
+@keyframes filter {
+    from {
+        filter: hue-rotate(0deg) saturate(100%);
+    }
+    50% {
+        filter: hue-rotate(360deg) saturate(140%);
+    }
+    to {
+        filter: hue-rotate(0deg) saturate(100%);
+    }
+}
+
