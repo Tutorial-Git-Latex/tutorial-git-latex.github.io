@@ -62,18 +62,19 @@ div#particles-js {
     margin-bottom: 1vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    text-align: center;
     padding: 15px;
     background: #444444EE;
     border: 5px #444444EE;
     border-radius: 3px;
 }
 
-.content p {
-    text-align: justify;
+.content h1 {
+    margin-bottom: 0px; 
 }
 
-.content h2 {
-    text-align: center;
+.content p {
+    text-align: justify;
 }
 
 footer {
@@ -102,6 +103,10 @@ footer a {
     .content{
         margin-left: 1vh;
         margin-right: 1vh;
+    }
+    .content svg {
+        width: 25vw;
+        height: 25vw;
     }
 }
   
