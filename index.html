@@ -7,30 +7,13 @@
         <div id="particles-js"></div>
         <div class="pagebox">
             <div class="topnav">
-                <a class="active" href="/">Home</a>
-                <a href="#Git">Git</a>
-                <a href="latex.html">Latex</a>
+                <div class="space"></div>
+                <a id="home">Home</a>
+                <a id="git">Git</a>
+                <a id="latex">Latex</a>
+                <div class="space"></div>
             </div>
-            <div class="content">
-                <h1>Guia rapido para Git & Latex</h1>
-                <svg width="200px" height="200px" viewBox="0 0 512 512">
-                    <path d="M256 368a16 16 0 0 1-7.94-2.11L108 285.84a8 8 0 0 0-12 6.94V368a16 16 0 0 0 8.23 14l144 80a16 16 0 0 0 15.54 0l144-80a16 16 0 0 0 8.23-14v-75.22a8 8 0 0 0-12-6.94l-140.06 80.05A16 16 0 0 1 256 368z" fill="#FFFFFF"/>
-                    <path d="M495.92 190.5v-.11a16 16 0 0 0-8-12.28l-224-128a16 16 0 0 0-15.88 0l-224 128a16 16 0 0 0 0 27.78l224 128a16 16 0 0 0 15.88 0L461 221.28a2 2 0 0 1 3 1.74v144.53c0 8.61 6.62 16 15.23 16.43A16 16 0 0 0 496 368V192a14.76 14.76 0 0 0-.08-1.5z" fill="#FFFFFF"/>
-                </svg>
-                <h2>Sobre o trabalho:</h2>
-                <p>O trabalho final, definido no cronograma da matéria, será o desenvolvimento de um produto que deverá contribuir na perspectiva da disciplina (Computador, Ética e Sociedad), construindo uma consciência crítica e responsável sobre os diversos aspectos associados aos impactos da informática na sociedade.</p>
-                <p>Alternativamente uma ação cidadã também é bem vinda! Ou seja o produto final será a apresentação dos resultados obtidos através da realização de uma ação cidadã, um trabalho social qualquer que envolva a utilização das tecnologias para ampliar o conhecimento/utilização de novos conceitos/metodologias importantes para grupos específicos da sociedade.</p>
-                <h2>Sobre nosso projeto:</h2>
-                <p>Nosso projeto consiste na criação de guias de uso práticos para certas ferramentas que acreditamos ser de extrema valia na confecção de trabalhos acadêmicos, códigos-fonte, dentre outros.</p>
-                <div>
-                    <p style="text-align:left;">Como exemplo dessas ferramentas temos:</p>
-                    <p><span style="color:rgb(54, 207, 54)">Latex (excelente para notação matemática e pouco comum entre os estudantes)</span> 
-                    </br><span style="color:darkgoldenrod">Git (Ferramenta de versionamento excelente para trabalhos em grupo)</span></p>
-                </div>
-                <p>Com esse site temos como principal objetivo abordar essas ferramentas, de forma a torná-las mais conhecidas e utilizadas. </p>
-                <p>Essa ideia surge a partir do reconhecimento da complexidade de alguns tutoriais existentes e do pouco conhecimento de estudantes sobre certas ferramentas, o objetivo é que os guias sejam práticos e que em poucos minutos as pessoas sejam capazes de ter a noção de como aproveitar essas aplicações.</p>
-                <p>Como discutido na elaboração do projeto, a necessidade surge da escassez de material compilado e claro para plataformas como Git e Latex, facilitando assim o processo de aprendizado, e diminuindo a frustração inicial de não encontrar material de fácil assimilação.</p>
-            </div>
+            <div id="html" class="content"></div>
             <div class="space"></div>
             <footer>
                 <p>Feito por:</p>
@@ -38,8 +21,8 @@
                 <div class="space"></div>
                 <p>Trabalho de MATA68</br>2019.2 - UFBA</p>
                 <p><a href="https://github.com/Tutorial-Git-Latex/tutorial-git-latex.github.io">
-                    <svg width="50px" height="50px" viewbox="0 0 14 14">
-                    <path d="m 7,1.1480539 c -3.313515,0 -6,2.68652 -6,6 0,2.65087 1.719175,4.9003701 4.103505,5.6933601 C 5.403301,12.897114 5.5,12.711544 5.5,12.552834 l 0,-1.11716 C 3.831039,11.798964 3.483359,10.728164 3.483359,10.728164 3.210913,10.034324 2.817388,9.8497439 2.817388,9.8497439 c -0.544456,-0.37205 0.04101,-0.36474 0.04101,-0.36474 0.602563,0.0425 0.919922,0.6186401 0.919922,0.6186401 0.535136,0.91698 1.403301,0.65187 1.746088,0.49855 0.05371,-0.38773 0.208951,-0.6523401 0.380854,-0.8022501 -1.333048,-0.15137 -2.733437,-0.66603 -2.733437,-2.96534 0,-0.65528 0.234379,-1.19045 0.618204,-1.61036 -0.0625,-0.15137 -0.267612,-0.76171 0.05764,-1.5879 0,0 0.503913,-0.16113 1.650349,0.61523 0.478981,-0.13282 0.992214,-0.19969 1.501981,-0.20214 0.509767,0.002 1.023903,0.0693 1.502913,0.20214 1.145534,-0.77636 1.648427,-0.61523 1.648427,-0.61523 0.326709,0.82616 0.121107,1.4365 0.0591,1.5879 0.384786,0.41991 0.61768,0.95508 0.61768,1.61036 0,2.30467 -1.403797,2.81199 -2.739729,2.96044 0.214806,0.18606 0.411641,0.5517401 0.411641,1.1113201 0,0.80274 0,1.44923 0,1.64647 0,0.15967 0.09615,0.34669 0.400369,0.28812 C 11.283214,12.046534 13,9.7984539 13,7.1480839 c 0,-3.31348 -2.686544,-6.00003 -6,-6.00003 z" fill="#FFFFFF"/>
+                    <svg width="40px" height="38px" role="img" viewBox="0 0 24 24">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#FFFFFF"/>
                     </svg>
                 </a></p>
             </footer>
@@ -47,6 +30,39 @@
     </body>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', 'particles.json');
+        var homeBtn = document.getElementById("home")
+        var gitBtn = document.getElementById("git")
+        var latexBtn = document.getElementById("latex")
+
+        //Load first page
+        var content = document.getElementById("html")
+        fetch("content-home.html").then(response => response.text()).then(text => content.innerHTML = text)
+        homeBtn.classList.add("active")
+
+        //Home Button
+        homeBtn.addEventListener("click", function(){
+            fetch("content-home.html").then(response => response.text()).then(text => content.innerHTML = text)
+            homeBtn.classList.add("active")
+            gitBtn.classList.remove("active")
+            latexBtn.classList.remove("active")
+        })
+
+        //Home Button
+        gitBtn.addEventListener("click", function(){
+            fetch("content-git.html").then(response => response.text()).then(text => content.innerHTML = text)
+            gitBtn.classList.add("active")
+            latexBtn.classList.remove("active")
+            homeBtn.classList.remove("active")
+        })
+
+        //Home Button
+        latexBtn.addEventListener("click", function(){
+            fetch("content-latex.html").then(response => response.text()).then(text => content.innerHTML = text)
+            latexBtn.classList.add("active")
+            homeBtn.classList.remove("active")
+            gitBtn.classList.remove("active")
+        })
+               
+        particlesJS.load('particles-js', 'particles.json')
     </script>
 </html>

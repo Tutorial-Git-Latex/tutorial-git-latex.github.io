@@ -29,9 +29,12 @@ div#particles-js {
 .topnav {
     flex-grow: 0;
     width: 100%;
-    background-color: #333333DD;
     display: flex;
     justify-content: center;
+}
+
+.topnav .space {
+    background-color: #333333DD;
 }
   
 .topnav a {
@@ -40,7 +43,7 @@ div#particles-js {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    background-color: #00000077;
+    background-color: #2f2f2ffa;
     font-size: 17px;
 }
 
@@ -50,8 +53,7 @@ div#particles-js {
 }
 
 .topnav a.active {
-    animation: filter 30s infinite;
-    background-color: rgba(0,255,163,1);
+    background-color: #00000000;
     color: white;
 }
 
@@ -77,12 +79,12 @@ div#particles-js {
     text-align: justify;
 }
 
-.content div {
+.content #examples {
     display: flex;
     flex-direction: row;
 }
 
-.content div p {
+.content #examples p {
     padding-right: 5px;
 }
 
