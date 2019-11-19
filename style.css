@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-style: normal;
+    word-wrap: break-word;
     height: 100%;
 }
 
@@ -197,7 +198,7 @@ table, td, th {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
     .content{
         margin-left: 1vh;
         margin-right: 1vh;
