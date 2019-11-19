@@ -9,6 +9,8 @@ body {
 }
 
 div#particles-js {
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: -10;
@@ -20,9 +22,9 @@ div#particles-js {
     visibility: hidden;
     opacity: 0;
     position: fixed; 
-    right: 20px;
+    right: 2px;
     bottom: 2px;  
-    background-color: #000000DD; 
+    background-color: rgba(0, 0, 0, 0.867); 
     cursor: pointer; 
     border-radius: 4px;
     transition: background-color .2s, opacity .2s, visibility .2s;
@@ -35,7 +37,7 @@ div#particles-js {
 }
 
 #top:hover {
-    background-color: #FFFFFFDD;
+    background-color: rgba(255, 255, 255, 0.867);
 }
 
 #top:hover svg path {
@@ -49,7 +51,6 @@ div#particles-js {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    overflow: auto;
 }
 
 #menu {
@@ -59,7 +60,7 @@ div#particles-js {
 }
 
 #menu div {
-    background-color: #00000044;
+    background-color: rgba(0, 0, 0, 0.267);
     font-size: 20px;
     width: 100%;
     margin: 5px;
@@ -71,7 +72,9 @@ div#particles-js {
 }
 
 #menu div a {
-    background-color: #00000044;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: #FFFFFF;
+    text-decoration: none;
     margin: 3px;
     padding: 5px;
     font-size: 15px;
@@ -91,7 +94,7 @@ div#particles-js {
 }
 
 .topnav .space {
-    background-color: #333333DD;
+    background-color: rgba(51, 51, 51, 0.867);
 }
   
 .topnav a {
@@ -100,7 +103,7 @@ div#particles-js {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    background-color: #2f2f2ffa;
+    background-color: rgba(47, 47, 47, 0.98);
     font-size: 17px;
 }
 
@@ -111,7 +114,7 @@ div#particles-js {
 }
 
 .topnav a.active {
-    background-color: #00000000;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
 }
 
@@ -124,9 +127,14 @@ div#particles-js {
     margin-right: 10vw;
     text-align: justify;
     padding: 15px;
-    background: #444444EE;
-    border: 5px #444444EE;
+    background: rgba(68, 68, 68, 0.933);
+    border: 5px rgba(68, 68, 68, 0.933);
     border-radius: 3px;
+}
+
+.content a {
+    text-decoration: none;
+    color: #4169e1;
 }
 
 .content h1 {
@@ -141,7 +149,7 @@ div#particles-js {
 .content pre {
     padding: 5px;
     border-radius: 4px;
-    background-color: #00000033;
+    background-color: rgba(0, 0, 0, 0.2);
     overflow-x: auto;
 }
 
@@ -156,7 +164,7 @@ div#particles-js {
 
 footer {
     flex-grow: 0;
-    background: #000000DD;
+    background: rgba(0, 0, 0, 0.867);
     color: white;
     text-align: left;
     display: flex;
@@ -176,7 +184,8 @@ footer p {
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse;;
+    margin: auto;
 }
   
 table, td, th {
@@ -185,7 +194,7 @@ table, td, th {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     text-align: center;
-    background-color: #00000033;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 680px) {

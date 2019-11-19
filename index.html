@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutorial Git&Latex</title>
     </head>
     <body>
         <div id="particles-js"></div>
@@ -37,7 +38,7 @@
             </footer>
         </div>
     </body>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>]
     <script>
         var homeBtn = document.getElementById("home")
         var gitBtn = document.getElementById("git")
@@ -73,15 +74,14 @@
         })
                
         var topBtn = document.getElementById("top")
-        var pageBox = document.getElementById("pagebox")
         
-        pageBox.onscroll = function() {
-            if (pageBox.scrollTop > 150) topBtn.classList.add("active");
+        document.body.onscroll = function() {
+            if (document.body.scrollTop > 150) topBtn.classList.add("active");
             else topBtn.classList.remove("active");
         };
 
         topBtn.addEventListener("click", function() {
-            pageBox.scrollTop = 0;
+            document.body.scrollTop = 0;
         })
 
         particlesJS.load('particles-js', 'particles.json')

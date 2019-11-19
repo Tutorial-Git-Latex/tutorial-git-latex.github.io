@@ -1,27 +1,29 @@
 <div id="menu">
     <div>
         Primeiros Passos
-        <a>Instalação</a>
-        <a>Iniciando em Latex</a>
+        <a href="#install">Instalação</a>
+        <a href="#starting">Iniciando em Latex</a>
+        <a href="#exercise">Tarefa Proposta</a>
     </div>
     <div>
         Notação Matematica
-        <a>Batata</a>
-        <a>Feijão</a>
+        <a href="#basicnotations">Notação e operações básicas</a>
+        <a href="#mathsymbols">Simbolos matemáticos</a>
+        <a href="#sombincomp">Somatório, Binômio de Newton, Comparações e Índices</a>
+        <a href="#calculo">Limites, Derivadas, Integrais e Funções</a>
+        <a href="#exercise2">Tarefa Proposta</a>
     </div>
     <div>
-        Algoritmos Topissimos
-        <a>Trator</a>
-        <a>Bicicleta</a>
-    </div>
-    <div>
-        Socorro é muito texto
-        <a>Alguem</a>
-        <a>Me Ajuda</a>
+        Algoritmos
+        <a href="#importing">Importando a biblioteca e configurando</a>
+        <a href="#commonwriting">Escrita comum e estruturas de decisão</a>
+        <a href="#repetitionstr">Estruturas de repetição</a>
+        <a href="#exercise3">Tarefa Proposta</a>
     </div>
 </div>
 
 <h2>Primeiros passos:</h2>
+<a name="install"></a>
 <h3>1. Instalação:</h3>
 <p><strong>Primeiramente, temos que fazer o download e a instalação do Latex no seu computador. Como é uma ferramenta multiplataforma, ou seja, funciona em diversos Sistemas Operacionais, vamos ensinar como fazer a instalação nos dois principais: Windows e Linux.</strong></p>
 <ul>
@@ -36,6 +38,7 @@
 <li>Assim que entrar, ao lado esquerdo da tela, procure pelo botão "Novo Projeto", e lá estarão algumas opções para escolher de acordo com sua preferência, além de vários modelos que poderá escolher de acordo com o que se precisa.</li>
 <li>Esta plataforma também dispõe de outras ferramentas para organizar seus projetos e também versões pagas para melhorar a experiência do usuário. Possui também sincronização com o github para importar os projetos.</li>
 </ul>
+<a name="starting"></a>
 <h3>2. Iniciando em Latex:</h3>
 <p>1. O Latex é uma ferramenta de compilação textual muito utilizada para a criação de documentos científicos. Apesar de ser um pouco complicado usar Latex no começo, todo o esforço vale a pena, pois os textos ficarão cada vez mais superiores aos feitos por editores de textos comuns.</p>
 <p>2. A primeira coisa que se deve entender ao introduzir o Latex no cotidiano é a similaridade com códigos de programação, com isso, o mais comum a se aprender daqui pra frente são as funções para dar corpo ao texto e a utilidade das mesmas.</p>
@@ -222,5 +225,264 @@
 </code></pre>
 <p>Os pacotes são encontrados na internet, dependendo do que se deseja incluir no documento.</p>
 
+<a name="exercise"></a>
+<h3>Tarefa Proposta:</h3>
 <p>Chegamos então na parte de exercitar o que se aprendeu até agora. Esse passo é bastante importante, então não pule e faça para aprimorar suas habilidades.</p>
 <p>A atividade proposta é de se criar um documento com o LaTeX, fazendo um modelo de um artigo científico. Assim, deve-se utilizar o que se aprendeu até esse momento, fazendo o uso das diversas funções que conhecemos até este momento, seções, subseções, título, letras e acentos, bibliografia e outras. Assim, a sua mente começará a entender melhor o funcionamento e com a prática a perfeição vem.</p>
+
+<a name="basicnotations"></a>
+<h2>Notação Matemática:</h2>
+<p>Muitas vezes queremos escrever em documentos notações matemáticas, às vezes para tornar digitais anotações manuais, ou para trabalhos importantes. Este tópico tem como objetivo trazer uma introdução sobre a matemática no LaTeX, algo que é nativo e de muita utilidade na ferramenta.</p>
+<h3>1. Notação e operações básicas:</h3>
+<p>O símbolo mais importante para utilizar notações matemáticas no LaTeX é o seguinte: "$$", dentro destes dois cifrões podemos escrever diversos símbolos matemáticos e tirar todo proveito que a ferramenta pode nos dar!</p>
+<p>Vamos começar com exemplos simples, você pode testar cada notação utilizando o <a href="http://pt.overleaf.com">Overleaf</a> ou o <a href="https://www.texstudio.org/">TexStudio</a>.</p>
+<p>O seguinte Link contém um arquivo com todos os exemplos deste guia: <a href="https://pt.overleaf.com/read/kvfjcxfmztjw">Guia Exemplos</a></p>
+<p>Exemplo 1: f(x) = 5(x^5) + 2x² + x + 3, uma função básica mas que pode ser muito feia se escrita diretamente desta forma em um editor comum, no LaTeX podemos utilizar os seguintes comandos:</p>
+<pre><code>
+    $f(x) = 5x^{5} + 2x^{2} + x + 3$
+
+</code></pre>
+<p>O operador x^{} permite que elevemos "x" a qualquer potência, inclusive frações!</p>
+<p>Vamos ver o exemplo a seguir utilizando a mesma função com coeficientes distintos.</p>
+<p>Exemplo 2. f(x) = 5x^(½) + 2x^(⅗) + x + raiz cubica de (3)</p>
+<pre><code>
+    $f(x) = 5x^{\frac{1}{2}} + 2x^{\frac{3}{5}} + x + \sqrt[3]{3}$
+
+</code></pre>
+<p>O comando \frac{}{} permite que expressemos frações, sendo o primeiro {} o numerador, e o segundo o denominador. \sqrt[]{} permite escolher a raiz que se deseja entre [] e a expressão {}, [] vazio acarreta em raiz quadrada. Podemos utilizar outros comandos dentro das chaves, de forma a colocar frações sobre frações.</p>
+<p>Exemplo 3:</p>
+<pre><code>
+    $\frac{\frac{1}{2}}{\frac{1}{4}}$
+    
+</code></pre> 
+
+<a name="mathsymbols"></a>
+<h3>2. Símbolos matemáticos:</h3>
+<p>Muitos símbolos matemáticos e letras do alfabeto gregos são utilizados nas operações matemáticas, esses tais são representados por comandos no LaTeX, os quais podem ser encontrados facilmente pela Internet, segue exemplo:</p>
+<p>Fonte: <a href="http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html">http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html</a></p>
+<p>Para utilizá-los basta digitar os "$$" e escrever o símbolo desejado dentro precedido de " <strong>\</strong>":</p>
+<p>Exemplos 4 e 5: Gamma, Lamba, epsilon, Beta, Omega. </p>
+<p>Obs: Algumas letras possuem versões minúsculas e maiúsculas, bastando trocar o comando para utilizá-las:</p>
+<pre><code>
+    Ex4: $\gamma, \lambda, \epsilon, \beta, \omega$\
+
+    Ex5: $\Gamma, \Lambda,\Omega$
+
+</code></pre>
+<p>Diversos outros símbolos são utilizados da mesma forma, bastando um comando para obtê-los.</p>
+
+<a name="sombincomp"></a>
+<h3>3. Somatório, Binômio de Newton, Comparações e índices.</h3>
+<p>Queremos saber se certo número escrito na forma binômio de Newton é maior ou igual a uma série chamada "Série geométrica". Mas para isso preciso de 2 funções que quero diferenciar por índices abaixo delas, como representar isso? Imagino que em um editor comum seria extremamente difícil, mas isso é possível com poucos comandos no LaTeX:</p>
+<p>Exemplo 6:</p>
+<pre><code>
+    \$f_1(x)= $${4}\choose{2}$$\
+    f_2(x)=\sum_{n=1}^{\infty} x^n\
+    f_1(x) \geq f_2(x)?$
+
+</code></pre>
+
+<ul>
+<li>f_ nos permite escrever números ou elementos abaixo de letras.</li>
+<li>{}\choose{} representa o binômio de Newton, sendo as primeiras chaves pro número acima e as últimas para o número abaixo.</li>
+<li>\sum_{}^{} valor Permite que possamos escrever somatórios, sendo as primeiras chaves para o número abaixo do Sigma, a segunda para o elemento acima do sigma e o espaço seguinte para a expressão que desejamos escrever.</li>
+<li>\infty nos dá o símbolo de infinito.</li>
+<li><p>\geq (maior ou igual) é um símbolo de comparação, existem outros como \leq (menor ou igual), \equiv (equivalente), \neq (diferente) dentre outros.</p></li>
+</ul>
+
+<a name="calculo"></a>
+<h3>4. Limites, Derivadas,Integrais e Funções.</h3>
+<p>Para os amantes (ou não) de cálculo, é muito comum encontrar limites, derivadas, integrais e os mais diversos tipos de funções no dia-a-dia. É possível escrever essas funções de maneira fácil e intuitiva na ferramenta:</p>
+<p>Limites:</p>
+<p>Sabemos que o limite de (1/x) quando x tende a 0+ é infinito, mas como representar isso?</p>
+<p>Exemplo 7:</p>
+<pre><code>
+    $\displaystyle \lim_{x\rightarrow 0^{+}} \frac{1}{x} = \infty$
+
+</code></pre> 
+<p>Estes comandos permitem que possamos exprimir qualquer tipo de limite.<p>
+<ul>
+    <li>\displaystyle formata o texto de modo que possamos exibir o x->0+ abaixo do limite.</li>
+    <li>\lim representação para "lim".</li>
+    <li>\rightarrow representação para seta direita ->;</li>
+    <li>Os outros símbolos e comandos já foram apresentados anteriormente.</li>
+</ul>
+<p>Derivadas:</p>
+<p>As derivadas são simples de representar, podemos utilizar o comando "^{ }" ou "\frac{}{}".</p>
+<p>Exemplo 8:</p>
+<pre><code>
+    $f^{'}(x)  , f^{''}(x)  , f^{n}(x) , \frac{d}{dx}f(x) , \frac{d^{2}}{dx^{2}}f(x) $
+
+</code></pre>
+
+<p> </p>
+<p>Em sequência: Derivada primeira, derivada segunda, derivada n-ésima, derivada primeira e segunda com notação de Leibniz.</p>
+
+<p>Integrais</p>
+<p>As integrais não fogem muito do padrão apresentado anteriormente, usamos "_" e "^{}", além do \displaystyle para retirar qualquer formatação da linha dela.</p>
+<p>Exemplo 9:</p>
+<pre><code>
+    $\displaystyle \int_0^{2} f(x) dx$
+
+</code></pre>
+<ul>
+    <li>\int exibe a integral, _0 o limite de integração inferior e ^{2} o superior.</li>
+</ul>
+<p>Funções complexas:</p>
+<p>Existem funções que apresentam comportamentos muito diferentes em diversos pontos, como exemplo a função módulo, que pode ser declarado como 2 instâncias. (-x) se x\&lt; 0 e x se x\&gt;= 0. Escrito dessa forma, fica mal formatado e um pouco ruim de se ler, porém é possível formatar esse tipo de funções no LaTeX do seguinte modo:</p>
+<p>Exemplo 10:</p>
+<pre><code>
+    $f(x)= \Bigg\{ 
+    \begin{array}{cc}
+    x, & se\, x\geq0 \\
+    -x, & se \,x < 0\\
+    \end{array}$
+            
+</code></pre>
+<ul>
+    <li>\Bigg{ Cria chaves de tamanho grande, como vemos no exemplo.</li>
+    <li>\begin{array}{cc} e \end{array} criam uma estrutura de matriz que nos permite escrever da forma que é vista acima, de forma matricial.</li>
+    <li>& move o elemento para outra coluna da matriz, na mesma linha, por isso conseguimos escrever o "se x" separado do "x,"</li>
+</ul>
+
+<a name="exercise2"></a>
+<h3>Tarefa proposta:</h3>
+<p>Agora que você já tem o conhecimento básico das noções de matemática no LaTeX, propomos a seguinte atividade:</p>
+<p>Transforme o seguinte teorema em um código LaTeX utilizando tudo o que você aprendeu neste guia.</p>
+<p> </p>
+<p>Dicas: usar a biblioteca \usepackage{amsmath} e colocar as expressões matemáticas entre \begin{equation*} e  \end{equation*} para centralizar e dar destaque nas equações matemáticas.</p>
+<p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
+<p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/fbcvsnyqvqvn">Gabarito</a></p>
+
+<a name="importing"></a>
+<h2>Algoritmos:</h2>
+<p>As vezes temos algoritmos escritos em linguagens de programação específicas e desejamos mostrar seu funcionamento através de um pseudocódigo, abstraindo essas informações de forma a tornar entendível e implementável em qualquer linguagem. A biblioteca do LaTeX chamada "Algorithm2e" torna muito mais prático o processo de transformação de algoritmos implementados para pseudocódigo. O seguinte tópico tem como objetivo esclarecer algumas funções básicas da biblioteca, e permitir que em poucos minutos seja possível escrever diversos algoritmos. Obs: Todos os exemplos deste guia podem ser encontrados em: <a href="https://pt.overleaf.com/read/kvfjcxfmztjw">Guia_Exemplos</a></p>
+<h3>1. Importando a biblioteca e configurando.</h3>
+<p>Para utilizar a biblioteca você deve importar o seguinte trecho de código "\usepackage[portuguese,onelanguage,ruled,linesnumbered,vlined]{algorithm2e}" . Esse trecho além de permitir utilizar a biblioteca, contém algumas informações sobre a exibição. A linguagem que o pseudocódigo será escrito (portuguese), escrito em uma única língua (onelanguage), formatado em uma caixa com título (ruled), onde as linhas são numeradas (linesnumbered) e que linhas irão identificar a indentação (vlined). Quando não "vlined" o código irá apresentar a frase "fim" ao término da indentação.</p>
+<a name="commonwriting"></a>
+<h3>2. Escrita comum e estruturas de decisão.</h3>
+<p>A seguinte estrutura básica corresponde à abertura de contexto de algoritmo e algumas outras funções:</p>
+<pre><code>
+    \begin{algorithm}
+    \SetKwInOut{Input}{Entrada}
+    \SetKwInOut{Output}{Saída}
+    \Input{Inteiro a $\leq 10^{10}$}
+    \Output{Inteiro elevado ao quadrado}
+        \DontPrintSemicolon
+            b = a*a\;
+            return b;
+    \caption{int quadrado(int a)}
+    \end{algorithm}
+
+</code></pre>
+<ul>
+    <li>\begin{algorithm} \end{algorithm} iniciam e terminam o contexto de algoritmos.</li>
+    <li>\SetKwInOut{Input}{Entrada} seta \Input como um comando para entrada e saída com labem "Entrada".</li>
+    <li>\SeKwInOut{Output}{Saída}, de forma análoga ao ponto anterior para saída.</li>
+    <li>\Input{ } e \Output{ } comandos configurados no cabeçalho para imprimir no algoritmo <strong>Entrada</strong> e <strong>Saída</strong> com seus respectivos textos.</li>
+    <li>\DontPrintSemicolon comando para não exibir ; das linhas (retirar se desejar ver os ";")</li>
+    <li>O texto desejado deve ser escrito diretamente e para haver quebra de linha deve se utilizar \;</li>
+    <li>\caption{ } define título do algoritmo.</li>
+</ul>
+<p>Para tomar decisões, utilizamos algumas funções já prontas da biblioteca, a quais serão vistas no código exemplo à seguir:</p>
+<pre><code>
+    \begin{algorithm}
+    \SetKwInOut{Input}{Entrada}
+    \SetKwInOut{Output}{Saída}
+    \Input{2 Notas de um Aluno.}
+    \Output{``Parabéns! Aprovado" se Média = 10, 
+    ``Aprovado" se Média $>$ 5.9 e ``Reprovado" caso contrário.}
+        \DontPrintSemicolon
+            media = (a+b)/2\;
+            \If{media == 10}{imprima(``Parabéns! Aprovado")}
+            \uElseIf{media $>$ 5.9}{imprima(``Aprovado")}
+            \Else{imprima(``Reprovado")}
+    \caption{aprovacao(double a, double b)}
+    \end{algorithm}
+        
+</code></pre>
+<ul>
+    <li>\If{x}{y}: "Se", x - Refere-se à condição, y - Operações a serem realizadas.</li>
+    <li>\uElseIf{x}{y}: "Senão se", x e y funcionam de forma análoga acima.</li>
+    <li>\Else{y}: "Senão", y - Operações a serem realizadas;</li>
+</ul>
+<p>Obs: É possível encadear várias expressões dentro das chaves referentes às operações a serem realizadas, inclusive outras estruturas, como o exemplo à seguir:</p>
+<pre><code>
+    \begin{algorithm}
+    \SetKwInOut{Input}{Entrada}
+    \SetKwInOut{Output}{Saída}
+    \Input{2 Notas de um Aluno.}
+    \Output{``Parabéns! Aprovado" se Média = 10, 
+    ``Aprovado" se Média $>$ 5.9 e ``Reprovado" caso contrário.}
+        \DontPrintSemicolon
+            media = (a+b)/2\;
+            \If{media $>$ 5.9}{
+                \If{media == 10}{imprima(``Parabéns! Aprovado")}
+                \Else{imprima(``Aprovado")}
+            }
+            \Else{imprima(``Reprovado")}
+    \caption{aprovacaoV2(double a, double b)}
+    \end{algorithm}
+        
+</code></pre>
+<p>Temos ainda a estrutura "Switch", a qual permite vários "casos", vemos o exemplo à seguir:</p>
+<pre><code>
+    \begin{algorithm}
+    \SetKwInOut{Input}{Entrada}
+    \SetKwInOut{Output}{Saída}
+    \Input{Caractere de Operação}
+    \Output{Operação realizada}
+        \DontPrintSemicolon
+            \Switch{Op}{
+                \Case{'D'}{imprima(``Despósito realizado")}
+                \Case{'S'}{imprima(``Saque realizado")}
+                \Case{'T'}{imprima(``Transferência realizada")}
+            }
+    \caption{banco(char Op)}
+    \end{algorithm}
+        
+</code></pre>
+<ul>
+    <li>\Switch{x}{y}: x - variável a ser selecionada, y - conteúdo do switch</li>
+    <li>\Case{x}{y}: x - valor a ser testado, y - conteúdo do case</li>
+</ul>
+<p>Obs: \Case deve estar sempre dentro de \Switch</p>
+
+<a name="repetitionstr"></a>
+<h3>3. Estruturas de repetição</h3>
+<p>É muito comum utilizarmos diversas estruturas de repetição na programação, a biblioteca referente suporta algumas estruturas dessas, as quais serão exemplificadas a seguir:</p>
+<pre><code>
+    \begin{algorithm}
+        \DontPrintSemicolon
+            i = 0\;
+            \While{i$\;\neq\;$10}{
+                i++\;
+                \If{i==5}{break\;}
+            }
+            \For{i = 5 \KwTo 10}{
+                imprima(i)\;
+            }
+            k = 0\;
+            \Repeat{k==15}{
+                k++\;
+            }
+    \caption{repeticao()}
+    \end{algorithm}
+    
+</code></pre>
+<ul>
+    <li>\While{x}{y}: Estrutura "enquanto", x - condição de repetição, y - operações a serem realizadas.</li>
+    <li>\For{x}{y}: Estrutura "para", x - condição de repetição, y - operações a serem realizadas, \KwTo gera expressão "até".</li>
+    <li>\Repeat{x}{y}:Estrutura "repita até", x - condição de parada, y - operações a serem realizadas.</li>
+</ul>
+<p>Obs: Lembra-se que essas "operações a serem realizadas", podem ser diversas, desde uma única, até diversas estruturas de decisões e inclusive outras estruturas de repetições, basta que as informações estejam dentro das chaves corretas.</p>
+<p>Esses foram alguns exemplos básicos e úteis de como representar diversas estruturas da programação no LaTeX, desejar mais informações recomendaria acessar a documentação <a href="http://tug.ctan.org/macros/latex/contrib/algorithm2e/doc/algorithm2e.pdf">Doc_Algorithm2e</a>, visitar a página de exemplos descrita acima, e/ou enviar um e-mail para nós.</p>
+
+<a name="exercise3"></a>
+<h3>Tarefa Proposta:</h3>
+<p>Agora que você já possui os conhecimentos necessários, que tal realizar a seguinte tarefa?</p>
+<p>Escreva um código LaTeX, utilizando a biblioteca "Algorithm2e" para o seguinte algoritmo (pós-ordem iterativo):</p>
+<p>Dica: utilize $\rightarrow$ para o símbolo da seta.</p>
+<p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
+<p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/ckvbtpyffvph">Gabarito</a>.</p>
+<p>Se sentir alguma dúvida em símbolos matemáticos, favor visitar seção "Notação Matemática" no site.</p>
