@@ -1,0 +1,65 @@
+<div id="menu">
+    <div>
+        Primeiros Passos
+        <a>Instalação</a>
+        <a>O que é Latex</a>
+    </div>
+    <div>
+        Notação Matematica
+        <a>Batata</a>
+        <a>Feijão</a>
+    </div>
+    <div>
+        Algoritmos Topissimos
+        <a>Trator</a>
+        <a>Bicicleta</a>
+    </div>
+    <div>
+        Socorro é muito texto
+        <a>Alguem</a>
+        <a>Me Ajuda</a>
+    </div>
+</div>
+
+<h2>Primeiros passos:</h2>
+<h3>1. Instalação:</h3>
+<p><strong>Primeiramente, temos que fazer o download e a instalação do Latex no seu computador. Como é uma ferramenta multiplataforma, ou seja, funciona em diversos Sistemas Operacionais, vamos ensinar como fazer a instalação nos dois principais: Windows e Linux.</strong></p>
+<ul>
+<li>Para fazer a instalação no Windows, primeiro, faz-se a instalação do sistema tex, tendo como Link <a href="https://miktex.org/download">https://miktex.org/download</a>. Isso também vale para o Linux, clicando na seção Linux.</li>
+<li>Para Linux, o processo também é indicado no mesmo site para o Windows, porém, com os comandos para serem digitados no terminal. Atenção, pois deve-se levar em conta a distribuição Linux que se utiliza no PC.</li>
+<li>Além disso, deve-se também fazer a instalação do editor para documentos Latex. Neste caso, ensinaremos fazer a instalação do TeXstudio. Para isso, basta clicar no site <a href="https://www.texstudio.org/">https://www.texstudio.org/</a> , que contém os Downloads tanto para Windows como para Linux. Para isso, basta clicar na seção &quot;Downloads&quot;. Assim, só escolher o Sistema Operacional e a versão que se deseja instalar a ferramenta.</li>
+<li>Após a instalação dos mesmos, basta seguir os próximos capítulos deste tutorial e ficar fera no uso de LaTeX.</li>
+</ul>
+<p><strong>Existe também uma plataforma TeX online chamada Overleaf que pode ser uma alternativa caso não esteja usando seu próprio computador. Neste caso, basta apenas entrar no site</strong> <a href="https://pt.overleaf.com/"><strong>https://pt.overleaf.com/</strong></a> <strong>, se registrar e começar o seu documento.</strong></p>
+<ul>
+<li>Para usar a plataforma, basta se registrar com um e-mail e uma senha da sua preferência e assim estarão disponíveis algumas ferramentas para começar ou dar continuidade aos seus projetos.</li>
+<li>Assim que entrar, ao lado esquerdo da tela, procure pelo botão &quot;Novo Projeto&quot;, e lá estarão algumas opções para escolher de acordo com sua preferência, além de vários modelos que poderá escolher de acordo com o que se precisa.</li>
+<li>Esta plataforma também dispõe de outras ferramentas para organizar seus projetos e também versões pagas para melhorar a experiência do usuário. Possui também sincronização com o github para importar os projetos.</li>
+</ul>
+<p>1. O Latex é uma ferramenta de compilação textual muito utilizada para a criação de documentos científicos. Apesar de ser um pouco complicado usar Latex no começo, todo o esforço vale a pena, pois os textos ficarão cada vez mais superiores aos feitos por editores de textos comuns.</p>
+<p>2. A primeira coisa que se deve entender ao introduzir o Latex no cotidiano é a similaridade com códigos de programação, com isso, o mais comum a se aprender daqui pra frente são as funções para dar corpo ao texto e a utilidade das mesmas.</p>
+<p>3. A primeira função a ser aprendida é: \documentclass{"tipo de documento"}</p>
+<p>Esta, tem a finalidade de informar qual é o tipo de documento a ser produzido pelo autor. O &quot;tipo de documento&quot; pode ser trocado dependendo do documento que se deseja editar, como por exemplo &quot;article&quot;, &quot;report&quot;(os nomes devem ser digitados em Inglês), entre outros. Dependendo do que se precisa, é uma função importante para informar o leitor o tipo do documento que está sendo lido.</p>
+<p>4. Segundo, e não menos importante, temos as funções de começo e fim de documento, que servem (como o próprio nome já diz) para marcar qual é o início e qual é o fim do documento:</p>
+<pre><code>    \begin{document}
+
+            O corpo do seu documento deve ser escrito entre essas duas funções.
+
+    \end{document}
+</code></pre>
+<p>5. Quanto à formatação básica:</p>
+<ol>
+    <li>Todos os comandos Latex começam com o símbolo \ (barra invertida);</li>
+    <li>Os parágrafos são do tipo Justificado, ou seja, alinhados à esquerda e a direita;</li>
+    <li>O espaçamento é automático;</li>
+    <li>Para iniciar um novo parágrafo deixa-se uma ou mais linhas em branco. A primeira linha possui recuo (geralmente);</li>
+    <li>As linhas iniciadas com o símbolo % não serão consideradas pelo programa, servindo de comentário para anotações;</li>
+    <li>Para fazer uma quebra de página adiciona-se o comando \newpage;</li>
+    <li>Para fazer uma quebra de linha adiciona-se o comando \newline;</li>
+    <li>A indentação pode ser evitada usando o comando \noindent;</li>
+    <li>Para centralizar linhas usa-se o comando \centerline;</li>
+    <li>Para linhas mais à esquerda e mais à direita usa-se respectivamente \leftline e \rightline.</li>
+    <li>Os caracteres # $ % &amp; ~ _ ^ \ { } não podem ser utilizados normalmente, pois são reservados para designar algumas funções, assim, existem outras maneiras de representá-los. Para que algum desses apareça no texto, basta adicionar \ na frente.</li>
+</ol>
+<p>6. Acentos e Letras:</p>
+<p>Para fazer o uso de acentos e letras especiais o Tex dispõe de comandos que podem ser vistos na tabela a seguir:</p>
