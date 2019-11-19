@@ -2,7 +2,7 @@
     <div>
         Primeiros Passos
         <a>Instalação</a>
-        <a>O que é Latex</a>
+        <a>Iniciando em Latex</a>
     </div>
     <div>
         Notação Matematica
@@ -27,39 +27,200 @@
 <ul>
 <li>Para fazer a instalação no Windows, primeiro, faz-se a instalação do sistema tex, tendo como Link <a href="https://miktex.org/download">https://miktex.org/download</a>. Isso também vale para o Linux, clicando na seção Linux.</li>
 <li>Para Linux, o processo também é indicado no mesmo site para o Windows, porém, com os comandos para serem digitados no terminal. Atenção, pois deve-se levar em conta a distribuição Linux que se utiliza no PC.</li>
-<li>Além disso, deve-se também fazer a instalação do editor para documentos Latex. Neste caso, ensinaremos fazer a instalação do TeXstudio. Para isso, basta clicar no site <a href="https://www.texstudio.org/">https://www.texstudio.org/</a> , que contém os Downloads tanto para Windows como para Linux. Para isso, basta clicar na seção &quot;Downloads&quot;. Assim, só escolher o Sistema Operacional e a versão que se deseja instalar a ferramenta.</li>
+<li>Além disso, deve-se também fazer a instalação do editor para documentos Latex. Neste caso, ensinaremos fazer a instalação do TeXstudio. Para isso, basta clicar no site <a href="https://www.texstudio.org/">https://www.texstudio.org/</a> , que contém os Downloads tanto para Windows como para Linux. Para isso, basta clicar na seção "Downloads". Assim, só escolher o Sistema Operacional e a versão que se deseja instalar a ferramenta.</li>
 <li>Após a instalação dos mesmos, basta seguir os próximos capítulos deste tutorial e ficar fera no uso de LaTeX.</li>
 </ul>
 <p><strong>Existe também uma plataforma TeX online chamada Overleaf que pode ser uma alternativa caso não esteja usando seu próprio computador. Neste caso, basta apenas entrar no site</strong> <a href="https://pt.overleaf.com/"><strong>https://pt.overleaf.com/</strong></a> <strong>, se registrar e começar o seu documento.</strong></p>
 <ul>
 <li>Para usar a plataforma, basta se registrar com um e-mail e uma senha da sua preferência e assim estarão disponíveis algumas ferramentas para começar ou dar continuidade aos seus projetos.</li>
-<li>Assim que entrar, ao lado esquerdo da tela, procure pelo botão &quot;Novo Projeto&quot;, e lá estarão algumas opções para escolher de acordo com sua preferência, além de vários modelos que poderá escolher de acordo com o que se precisa.</li>
+<li>Assim que entrar, ao lado esquerdo da tela, procure pelo botão "Novo Projeto", e lá estarão algumas opções para escolher de acordo com sua preferência, além de vários modelos que poderá escolher de acordo com o que se precisa.</li>
 <li>Esta plataforma também dispõe de outras ferramentas para organizar seus projetos e também versões pagas para melhorar a experiência do usuário. Possui também sincronização com o github para importar os projetos.</li>
 </ul>
+<h3>2. Iniciando em Latex:</h3>
 <p>1. O Latex é uma ferramenta de compilação textual muito utilizada para a criação de documentos científicos. Apesar de ser um pouco complicado usar Latex no começo, todo o esforço vale a pena, pois os textos ficarão cada vez mais superiores aos feitos por editores de textos comuns.</p>
 <p>2. A primeira coisa que se deve entender ao introduzir o Latex no cotidiano é a similaridade com códigos de programação, com isso, o mais comum a se aprender daqui pra frente são as funções para dar corpo ao texto e a utilidade das mesmas.</p>
 <p>3. A primeira função a ser aprendida é: \documentclass{"tipo de documento"}</p>
-<p>Esta, tem a finalidade de informar qual é o tipo de documento a ser produzido pelo autor. O &quot;tipo de documento&quot; pode ser trocado dependendo do documento que se deseja editar, como por exemplo &quot;article&quot;, &quot;report&quot;(os nomes devem ser digitados em Inglês), entre outros. Dependendo do que se precisa, é uma função importante para informar o leitor o tipo do documento que está sendo lido.</p>
+<p>Esta, tem a finalidade de informar qual é o tipo de documento a ser produzido pelo autor. O "tipo de documento" pode ser trocado dependendo do documento que se deseja editar, como por exemplo "article", "report"(os nomes devem ser digitados em Inglês), entre outros. Dependendo do que se precisa, é uma função importante para informar o leitor o tipo do documento que está sendo lido.</p>
 <p>4. Segundo, e não menos importante, temos as funções de começo e fim de documento, que servem (como o próprio nome já diz) para marcar qual é o início e qual é o fim do documento:</p>
-<pre><code>    \begin{document}
+<pre><code>
+    \begin{document}    
 
-            O corpo do seu documento deve ser escrito entre essas duas funções.
+        O corpo do seu documento deve ser escrito entre essas duas funções.
 
     \end{document}
+
 </code></pre>
 <p>5. Quanto à formatação básica:</p>
 <ol>
-    <li>Todos os comandos Latex começam com o símbolo \ (barra invertida);</li>
-    <li>Os parágrafos são do tipo Justificado, ou seja, alinhados à esquerda e a direita;</li>
-    <li>O espaçamento é automático;</li>
-    <li>Para iniciar um novo parágrafo deixa-se uma ou mais linhas em branco. A primeira linha possui recuo (geralmente);</li>
-    <li>As linhas iniciadas com o símbolo % não serão consideradas pelo programa, servindo de comentário para anotações;</li>
-    <li>Para fazer uma quebra de página adiciona-se o comando \newpage;</li>
-    <li>Para fazer uma quebra de linha adiciona-se o comando \newline;</li>
-    <li>A indentação pode ser evitada usando o comando \noindent;</li>
-    <li>Para centralizar linhas usa-se o comando \centerline;</li>
-    <li>Para linhas mais à esquerda e mais à direita usa-se respectivamente \leftline e \rightline.</li>
-    <li>Os caracteres # $ % &amp; ~ _ ^ \ { } não podem ser utilizados normalmente, pois são reservados para designar algumas funções, assim, existem outras maneiras de representá-los. Para que algum desses apareça no texto, basta adicionar \ na frente.</li>
+    <li>A. Todos os comandos Latex começam com o símbolo \ (barra invertida);</li>
+    <li>B. Os parágrafos são do tipo Justificado, ou seja, alinhados à esquerda e a direita;</li>
+    <li>C. O espaçamento é automático;</li>
+    <li>D. Para iniciar um novo parágrafo deixa-se uma ou mais linhas em branco. A primeira linha possui recuo (geralmente);</li>
+    <li>E. As linhas iniciadas com o símbolo % não serão consideradas pelo programa, servindo de comentário para anotações;</li>
+    <li>F. Para fazer uma quebra de página adiciona-se o comando \newpage;</li>
+    <li>G. Para fazer uma quebra de linha adiciona-se o comando \newline;</li>
+    <li>H. A indentação pode ser evitada usando o comando \noindent;</li>
+    <li>I. Para centralizar linhas usa-se o comando \centerline;</li>
+    <li>J. Para linhas mais à esquerda e mais à direita usa-se respectivamente \leftline e \rightline.</li>
+    <li>K. Os caracteres # $ % & ~ _ ^ \ { } não podem ser utilizados normalmente, pois são reservados para designar algumas funções, assim, existem outras maneiras de representá-los. Para que algum desses apareça no texto, basta adicionar \ na frente.</li>
 </ol>
 <p>6. Acentos e Letras:</p>
 <p>Para fazer o uso de acentos e letras especiais o Tex dispõe de comandos que podem ser vistos na tabela a seguir:</p>
+<table>
+    <tr>
+        <td>á</td>
+        <td>\´a</td>
+    </tr>
+    <tr>
+        <td>à</td>
+        <td>`a</td>
+    </tr>
+    <tr>
+        <td>â</td>
+        <td>\^a</td>
+    </tr>
+    <tr>
+        <td>ä</td>
+        <td>.a</td>
+    </tr>
+    <tr>
+        <td>ǎ</td>
+        <td>\v{}a</td>
+    </tr>
+    <tr>
+        <td>ő</td>
+        <td>\H{}o</td>
+    </tr>
+    <tr>
+        <td>ã</td>
+        <td>~a</td>
+    </tr>
+    <tr>
+        <td>í</td>
+        <td>\&#39;\i{}</td>
+    </tr>
+    <tr>
+        <td>ā</td>
+        <td>\=a</td>
+    </tr>
+    <tr>
+        <td>ė</td>
+        <td>.</td>
+    </tr>
+</table>
+<p>Para acentuar as letras como se usa em editores mais convencionais pode ser adicionado o seguinte pacote: \usepackage[ansinew]{inputenc}</p>
+<p>7. Fontes: A fonte pré-determinada pelo Tex é chamada de romam, mas também possui outros tipos, como arial, italico, entre outros diversos. Estes comandos podem ser vistos na tabela a seguir:</p>
+<table>
+    <tr>
+        <td>\rm</td>
+        <td>Roman</td>
+    </tr>
+    <tr>
+        <td>\sl</td>
+        <td>Inclinada</td>
+    </tr>
+    <tr>
+        <td>\bf</td>
+        <td><strong>Negrito</strong></td>
+    </tr>
+    <tr>
+        <td>\tt</td>
+        <td>Typewriter</td>
+    </tr>
+    <tr>
+        <td>\it</td>
+        <td><em>itálica</em></td>
+    </tr>
+    <tr>
+        <td>\sc</td>
+        <td>CAIXA ALTA</td>
+    </tr>
+</table>
+<p>8. Textos também podem ser formatados adicionando <strong>quote</strong> e <strong>quotation</strong>, que servem para indicar citações, por exemplo:</p>
+<pre><code>
+    \begin{quote}
+
+        "citação";
+
+    \end{quote}
+
+</code></pre>
+<p>a diferença para o uso de quotation é que este possui na primeira linha de cada parágrafo do texto.</p>
+<p>Existem ainda outros três comandos para formatação de parágrafos que são flushleft, center e flushright, usados para mudar o alinhamento do parágrafo pela esquerda, centro e direita respectivamente.</p>
+<p>9. Para criar listas existem 2 comandos:</p>
+<p>O <strong>itemize</strong> e o <strong>enumerate</strong> que, respectivamente, criam uma lista onde cada item começa com uma bolinha e cria uma lista onde cada elemento começa com um número.</p>
+<pre><code>
+    \begin{itemize}
+
+        - Ciência da Computação.
+
+        - Licenciatura em Computação.
+
+    \end{itemize}
+
+    \begin{enumerate}
+
+        - Ciência da Computação.
+
+        - Licenciatura em Computação.
+
+    \end{enumerate}
+
+</code></pre>
+<p>10. O título do documento é feito da seguinte forma:</p>
+<pre><code>
+    \title{título}
+
+    \author{autor}
+
+    \date{data} //este é opcional, se não usar é colocada a data atual
+
+    \begin{document}
+
+    \maketitle
+        
+</code></pre>
+<p>Caso tenha mais que um autor pode ser mudado para a seguinte forma:</p>
+<pre><code>
+    \author{primeiro \and segundo}
+
+</code></pre>
+<p>11. Tamanho de letras:</p>
+<p>Na configuração básica do Latex as letras estão em tamanho 10pt. Para redefinir o tamanho, basta incluir, por exemplo, entre colchetes o tamanho entre \documentclass e {article}, ficando assim:</p>
+<pre><code>
+    \documentclass[12pt]{article}
+
+</code></pre>
+<p>Se quiser somente alterar o tamanho de uma palavra, frase ou parágrafo, existem também os comandos \footnotesize, \small, \large, \Large, \huge ou \Huge.</p>
+<p>Até aqui você já aprendeu o básico da utilização de LaTeX. O importante agora é a prática desses comandos para memorizar e se acostumar com a utilização dos mesmos. Assim, escreva um pequeno texto da sua preferência e tente adicionar a maioria desses comandos aprendidos até aqui. BOA DIVERSÂO!!!</p>
+<p>12. Seções e subseçẽs:</p>
+<p>Para escrever um texto acadêmico ou qualquer outro, devemos organizá-lo de tal forma que facilite a compreensão do leitor. Não diferente dos outros editores de texto, no Latex, podemos dividir o documento em seções e subseções com os comandos \section e \subsection seguidos de seus títulos entre chaves. Por exemplo:</p>
+<pre><code>  
+    \begin{abstract} 
+
+        “Resumo a ser feito”. 
+
+    \end{abstract}        
+    
+</code></pre>
+<p>Para incluir capítulos e partes, usa-se os comandos \part e \chapter, análogos ao uso de seções e subseções.</p>
+<p>13. Bibliografia:</p>
+<p>Uma bibliografia pode ser criada da seguinte forma:</p>
+<pre><code>
+    \begin{thebibliography}
+
+        \bibitem(cada referência é incluída, precedendo esse comando)
+    
+    \end{thebibliography}        
+
+</code></pre>
+<p>14. O LaTeX ainda resolve outros problemas de formatação com a inclusão de alguns pacotes que servem para uma infinidade de coisas, como incluir gráficos, figuras, melhorar a formatação de algoritmos, entre outas.</p>
+<p>Para isso, devem ser incluídos alguns pacotes para problemas específicos usando a função:</p>
+<pre><code>
+    \usepackage[opção]{pacote}
+
+</code></pre>
+<p>Os pacotes são encontrados na internet, dependendo do que se deseja incluir no documento.</p>
+
+<p>Chegamos então na parte de exercitar o que se aprendeu até agora. Esse passo é bastante importante, então não pule e faça para aprimorar suas habilidades.</p>
+<p>A atividade proposta é de se criar um documento com o LaTeX, fazendo um modelo de um artigo científico. Assim, deve-se utilizar o que se aprendeu até esse momento, fazendo o uso das diversas funções que conhecemos até este momento, seções, subseções, título, letras e acentos, bibliografia e outras. Assim, a sua mente começará a entender melhor o funcionamento e com a prática a perfeição vem.</p>

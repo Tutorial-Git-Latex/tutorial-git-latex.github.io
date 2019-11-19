@@ -55,6 +55,7 @@ div#particles-js {
 #menu {
     display: flex;
     flex-direction: row;
+    overflow-x: auto;
 }
 
 #menu div {
@@ -141,6 +142,7 @@ div#particles-js {
     padding: 5px;
     border-radius: 4px;
     background-color: #00000033;
+    overflow-x: auto;
 }
 
 .content #examples {
@@ -171,6 +173,19 @@ footer p {
 
 .space {
     flex-grow: 1;
+}
+
+table {
+    border-collapse: collapse;
+}
+  
+table, td, th {
+    width: 25vw;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #00000033;
 }
 
 @media (max-width: 680px) {
