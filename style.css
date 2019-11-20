@@ -152,6 +152,12 @@ div#particles-js {
     max-width: max-content;
 }
 
+.content .large {
+    display: block;
+    margin: 0 auto;
+    max-width: 45vw;
+}
+
 .content pre {
     padding: 5px;
     border-radius: 4px;
@@ -212,8 +218,17 @@ table, td, th {
         width: 25vw;
         height: 25vw;
     }
+    .content .large {
+        max-width: max-content;
+    }
 }
   
+@media (max-width: 950px) and (min-width: 750px) {
+    .content .large {
+        max-width: 60vw;
+    }
+}
+
 @keyframes filter {
     from {
         filter: hue-rotate(0deg) saturate(100%);

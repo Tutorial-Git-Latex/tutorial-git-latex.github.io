@@ -76,7 +76,7 @@
     </tr>
     <tr>
         <td>à</td>
-        <td>`a</td>
+        <td>\`a</td>
     </tr>
     <tr>
         <td>â</td>
@@ -84,7 +84,7 @@
     </tr>
     <tr>
         <td>ä</td>
-        <td>.a</td>
+        <td>\.a</td>
     </tr>
     <tr>
         <td>ǎ</td>
@@ -96,11 +96,11 @@
     </tr>
     <tr>
         <td>ã</td>
-        <td>~a</td>
+        <td>\~a</td>
     </tr>
     <tr>
         <td>í</td>
-        <td>\&#39;\i{}</td>
+        <td>\'\i{}</td>
     </tr>
     <tr>
         <td>ā</td>
@@ -108,7 +108,7 @@
     </tr>
     <tr>
         <td>ė</td>
-        <td>.</td>
+        <td>\.</td>
     </tr>
 </table>
 <p>Para acentuar as letras como se usa em editores mais convencionais pode ser adicionado o seguinte pacote: \usepackage[ansinew]{inputenc}</p>
@@ -148,7 +148,7 @@
     \end{quote}
 
 </code></pre>
-<p>a diferença para o uso de quotation é que este possui na primeira linha de cada parágrafo do texto.</p>
+<p>a diferença para o uso de quotation é que este permite que se use vários parágrafos na indentação do texto (citações com mais de três linhas).</p>
 <p>Existem ainda outros três comandos para formatação de parágrafos que são flushleft, center e flushright, usados para mudar o alinhamento do parágrafo pela esquerda, centro e direita respectivamente.</p>
 <p>9. Para criar listas existem 2 comandos:</p>
 <p>O <strong>itemize</strong> e o <strong>enumerate</strong> que, respectivamente, criam uma lista onde cada item começa com uma bolinha e cria uma lista onde cada elemento começa com um número.</p>
@@ -229,6 +229,7 @@
 <h3>Tarefa Proposta:</h3>
 <p>Chegamos então na parte de exercitar o que se aprendeu até agora. Esse passo é bastante importante, então não pule e faça para aprimorar suas habilidades.</p>
 <p>A atividade proposta é de se criar um documento com o LaTeX, fazendo um modelo de um artigo científico. Assim, deve-se utilizar o que se aprendeu até esse momento, fazendo o uso das diversas funções que conhecemos até este momento, seções, subseções, título, letras e acentos, bibliografia e outras. Assim, a sua mente começará a entender melhor o funcionamento e com a prática a perfeição vem.</p>
+<p>Formulário: <a href="https://forms.gle/JBw3U5YCV9iPD4g16">https://forms.gle/JBw3U5YCV9iPD4g16</a></p>
 
 <a name="basicnotations"></a>
 <h2>Notação Matemática:</h2>
@@ -261,7 +262,7 @@
 <a name="mathsymbols"></a>
 <h3>2. Símbolos matemáticos:</h3>
 <p>Muitos símbolos matemáticos e letras do alfabeto gregos são utilizados nas operações matemáticas, esses tais são representados por comandos no LaTeX, os quais podem ser encontrados facilmente pela Internet, segue exemplo:</p>
-<h2><img src="imagens/simbolos.png"></h2>
+<img class="large" src="imagens/simbolos.png">
 <p>Fonte: <a href="http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html">http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html</a></p>
 <p>Para utilizá-los basta digitar os "$$" e escrever o símbolo desejado dentro precedido de " <strong>\</strong>":</p>
 <p>Exemplos 4 e 5: Gamma, Lamba, epsilon, Beta, Omega. </p>
@@ -357,9 +358,10 @@
 <h3>Tarefa proposta:</h3>
 <p>Agora que você já tem o conhecimento básico das noções de matemática no LaTeX, propomos a seguinte atividade:</p>
 <p>Transforme o seguinte teorema em um código LaTeX utilizando tudo o que você aprendeu neste guia.</p>
-<img src="imagens/mattarefa.png">
+<img class="large" src="imagens/mattarefa.png">
 <p>Dicas: usar a biblioteca \usepackage{amsmath} e colocar as expressões matemáticas entre \begin{equation*} e  \end{equation*} para centralizar e dar destaque nas equações matemáticas.</p>
 <p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
+<p>Formulário: <a href="https://forms.gle/kZMBueHGBeoFyEATA">https://forms.gle/kZMBueHGBeoFyEATA</a></p>
 <p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/fbcvsnyqvqvn">Gabarito</a></p>
 
 <a name="importing"></a>
@@ -383,7 +385,7 @@
     \end{algorithm}
 
 </code></pre>
-<img src="imagens/alg1.png">
+<img class="large" src="imagens/alg1.png">
 <ul>
     <li>\begin{algorithm} \end{algorithm} iniciam e terminam o contexto de algoritmos.</li>
     <li>\SetKwInOut{Input}{Entrada} seta \Input como um comando para entrada e saída com labem "Entrada".</li>
@@ -410,7 +412,7 @@
     \end{algorithm}
         
 </code></pre>
-<img src="imagens/alg2.png">
+<img class="large" src="imagens/alg2.png">
 <ul>
     <li>\If{x}{y}: "Se", x - Refere-se à condição, y - Operações a serem realizadas.</li>
     <li>\uElseIf{x}{y}: "Senão se", x e y funcionam de forma análoga acima.</li>
@@ -435,7 +437,7 @@
     \end{algorithm}
         
 </code></pre>
-<img src="imagens/alg3.png">
+<img class="large" src="imagens/alg3.png">
 <p>Temos ainda a estrutura "Switch", a qual permite vários "casos", vemos o exemplo à seguir:</p>
 <pre><code>
     \begin{algorithm}
@@ -453,7 +455,7 @@
     \end{algorithm}
         
 </code></pre>
-<img src="imagens/alg4.png">
+<img class="large" src="imagens/alg4.png">
 <ul>
     <li>\Switch{x}{y}: x - variável a ser selecionada, y - conteúdo do switch</li>
     <li>\Case{x}{y}: x - valor a ser testado, y - conteúdo do case</li>
@@ -482,7 +484,7 @@
     \end{algorithm}
     
 </code></pre>
-<img src="imagens/alg5.png">
+<img class="large" src="imagens/alg5.png">
 <ul>
     <li>\While{x}{y}: Estrutura "enquanto", x - condição de repetição, y - operações a serem realizadas.</li>
     <li>\For{x}{y}: Estrutura "para", x - condição de repetição, y - operações a serem realizadas, \KwTo gera expressão "até".</li>
@@ -495,8 +497,9 @@
 <h3>Tarefa Proposta:</h3>
 <p>Agora que você já possui os conhecimentos necessários, que tal realizar a seguinte tarefa?</p>
 <p>Escreva um código LaTeX, utilizando a biblioteca "Algorithm2e" para o seguinte algoritmo (pós-ordem iterativo):</p>
-<img src="imagens/algotarefa.png">
+<img class="large" src="imagens/algotarefa.png">
 <p>Dica: utilize $\rightarrow$ para o símbolo da seta.</p>
 <p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
+<p>Formulário: <a href="https://forms.gle/y4SuW9wt9GNxfEKf7">https://forms.gle/y4SuW9wt9GNxfEKf7</a></p>
 <p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/ckvbtpyffvph">Gabarito</a>.</p>
 <p>Se sentir alguma dúvida em símbolos matemáticos, favor visitar seção "Notação Matemática" no site.</p>
