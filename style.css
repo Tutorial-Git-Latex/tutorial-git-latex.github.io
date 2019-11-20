@@ -147,6 +147,11 @@ div#particles-js {
     text-align: center;
 }
 
+.content img {
+    width: 100%;
+    max-width: max-content;
+}
+
 .content pre {
     padding: 5px;
     border-radius: 4px;

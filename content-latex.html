@@ -242,6 +242,7 @@
     $f(x) = 5x^{5} + 2x^{2} + x + 3$
 
 </code></pre>
+<img src="imagens/ex1.png">
 <p>O operador x^{} permite que elevemos "x" a qualquer potência, inclusive frações!</p>
 <p>Vamos ver o exemplo a seguir utilizando a mesma função com coeficientes distintos.</p>
 <p>Exemplo 2. f(x) = 5x^(½) + 2x^(⅗) + x + raiz cubica de (3)</p>
@@ -249,16 +250,18 @@
     $f(x) = 5x^{\frac{1}{2}} + 2x^{\frac{3}{5}} + x + \sqrt[3]{3}$
 
 </code></pre>
+<img src="imagens/ex2.png">
 <p>O comando \frac{}{} permite que expressemos frações, sendo o primeiro {} o numerador, e o segundo o denominador. \sqrt[]{} permite escolher a raiz que se deseja entre [] e a expressão {}, [] vazio acarreta em raiz quadrada. Podemos utilizar outros comandos dentro das chaves, de forma a colocar frações sobre frações.</p>
 <p>Exemplo 3:</p>
 <pre><code>
     $\frac{\frac{1}{2}}{\frac{1}{4}}$
     
 </code></pre> 
-
+<img src="imagens/ex3.png">
 <a name="mathsymbols"></a>
 <h3>2. Símbolos matemáticos:</h3>
 <p>Muitos símbolos matemáticos e letras do alfabeto gregos são utilizados nas operações matemáticas, esses tais são representados por comandos no LaTeX, os quais podem ser encontrados facilmente pela Internet, segue exemplo:</p>
+<h2><img src="imagens/simbolos.png"></h2>
 <p>Fonte: <a href="http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html">http://www.phph.com.br/engenharia/computacao/item/167-mimetex-o-latex-para-web.html</a></p>
 <p>Para utilizá-los basta digitar os "$$" e escrever o símbolo desejado dentro precedido de " <strong>\</strong>":</p>
 <p>Exemplos 4 e 5: Gamma, Lamba, epsilon, Beta, Omega. </p>
@@ -269,6 +272,8 @@
     Ex5: $\Gamma, \Lambda,\Omega$
 
 </code></pre>
+<p><img src="imagens/ex4.png"></p>
+<p><img src="imagens/ex5.png"></p>
 <p>Diversos outros símbolos são utilizados da mesma forma, bastando um comando para obtê-los.</p>
 
 <a name="sombincomp"></a>
@@ -281,7 +286,7 @@
     f_1(x) \geq f_2(x)?$
 
 </code></pre>
-
+<img src="imagens/ex6.png">
 <ul>
 <li>f_ nos permite escrever números ou elementos abaixo de letras.</li>
 <li>{}\choose{} representa o binômio de Newton, sendo as primeiras chaves pro número acima e as últimas para o número abaixo.</li>
@@ -300,6 +305,7 @@
     $\displaystyle \lim_{x\rightarrow 0^{+}} \frac{1}{x} = \infty$
 
 </code></pre> 
+<img src="imagens/ex7.png">
 <p>Estes comandos permitem que possamos exprimir qualquer tipo de limite.<p>
 <ul>
     <li>\displaystyle formata o texto de modo que possamos exibir o x->0+ abaixo do limite.</li>
@@ -314,7 +320,7 @@
     $f^{'}(x)  , f^{''}(x)  , f^{n}(x) , \frac{d}{dx}f(x) , \frac{d^{2}}{dx^{2}}f(x) $
 
 </code></pre>
-
+<img src="imagens/ex8.png">
 <p> </p>
 <p>Em sequência: Derivada primeira, derivada segunda, derivada n-ésima, derivada primeira e segunda com notação de Leibniz.</p>
 
@@ -325,6 +331,7 @@
     $\displaystyle \int_0^{2} f(x) dx$
 
 </code></pre>
+<img src="imagens/ex9.png">
 <ul>
     <li>\int exibe a integral, _0 o limite de integração inferior e ^{2} o superior.</li>
 </ul>
@@ -339,6 +346,7 @@
     \end{array}$
             
 </code></pre>
+<img src="imagens/ex10.png">
 <ul>
     <li>\Bigg{ Cria chaves de tamanho grande, como vemos no exemplo.</li>
     <li>\begin{array}{cc} e \end{array} criam uma estrutura de matriz que nos permite escrever da forma que é vista acima, de forma matricial.</li>
@@ -349,7 +357,7 @@
 <h3>Tarefa proposta:</h3>
 <p>Agora que você já tem o conhecimento básico das noções de matemática no LaTeX, propomos a seguinte atividade:</p>
 <p>Transforme o seguinte teorema em um código LaTeX utilizando tudo o que você aprendeu neste guia.</p>
-<p> </p>
+<img src="imagens/mattarefa.png">
 <p>Dicas: usar a biblioteca \usepackage{amsmath} e colocar as expressões matemáticas entre \begin{equation*} e  \end{equation*} para centralizar e dar destaque nas equações matemáticas.</p>
 <p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
 <p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/fbcvsnyqvqvn">Gabarito</a></p>
@@ -375,6 +383,7 @@
     \end{algorithm}
 
 </code></pre>
+<img src="imagens/alg1.png">
 <ul>
     <li>\begin{algorithm} \end{algorithm} iniciam e terminam o contexto de algoritmos.</li>
     <li>\SetKwInOut{Input}{Entrada} seta \Input como um comando para entrada e saída com labem "Entrada".</li>
@@ -401,6 +410,7 @@
     \end{algorithm}
         
 </code></pre>
+<img src="imagens/alg2.png">
 <ul>
     <li>\If{x}{y}: "Se", x - Refere-se à condição, y - Operações a serem realizadas.</li>
     <li>\uElseIf{x}{y}: "Senão se", x e y funcionam de forma análoga acima.</li>
@@ -425,6 +435,7 @@
     \end{algorithm}
         
 </code></pre>
+<img src="imagens/alg3.png">
 <p>Temos ainda a estrutura "Switch", a qual permite vários "casos", vemos o exemplo à seguir:</p>
 <pre><code>
     \begin{algorithm}
@@ -442,6 +453,7 @@
     \end{algorithm}
         
 </code></pre>
+<img src="imagens/alg4.png">
 <ul>
     <li>\Switch{x}{y}: x - variável a ser selecionada, y - conteúdo do switch</li>
     <li>\Case{x}{y}: x - valor a ser testado, y - conteúdo do case</li>
@@ -470,6 +482,7 @@
     \end{algorithm}
     
 </code></pre>
+<img src="imagens/alg5.png">
 <ul>
     <li>\While{x}{y}: Estrutura "enquanto", x - condição de repetição, y - operações a serem realizadas.</li>
     <li>\For{x}{y}: Estrutura "para", x - condição de repetição, y - operações a serem realizadas, \KwTo gera expressão "até".</li>
@@ -482,6 +495,7 @@
 <h3>Tarefa Proposta:</h3>
 <p>Agora que você já possui os conhecimentos necessários, que tal realizar a seguinte tarefa?</p>
 <p>Escreva um código LaTeX, utilizando a biblioteca "Algorithm2e" para o seguinte algoritmo (pós-ordem iterativo):</p>
+<img src="imagens/algotarefa.png">
 <p>Dica: utilize $\rightarrow$ para o símbolo da seta.</p>
 <p>Se desejar alguma ajuda e/ou correção para seu código, preencha o formulário abaixo e submeta o seu código. Iremos responder o mais oportuno possível.</p>
 <p>Caso não tenha tempo de esperar, segue gabarito: <a href="https://pt.overleaf.com/read/ckvbtpyffvph">Gabarito</a>.</p>
