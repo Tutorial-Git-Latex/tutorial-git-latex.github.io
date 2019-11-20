@@ -200,7 +200,7 @@ table, td, th {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #000000;
 }
 
 @media (max-width: 750px) {
